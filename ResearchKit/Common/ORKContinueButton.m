@@ -101,8 +101,9 @@ static const CGFloat ContinueButtonTouchMargin = 10;
 }
 
 + (UIFont *)defaultFont {
-    UIFontDescriptor *descriptor = [UIFontDescriptor preferredFontDescriptorWithTextStyle:UIFontTextStyleHeadline];
-    return [UIFont systemFontOfSize:[[descriptor objectForKey: UIFontDescriptorSizeAttribute] doubleValue]];
+//    UIFontDescriptor *descriptor = [UIFontDescriptor preferredFontDescriptorWithTextStyle:UIFontTextStyleHeadline];
+//    return [UIFont systemFontOfSize:[[descriptor objectForKey: UIFontDescriptorSizeAttribute] doubleValue]];
+    return [UIFont fontWithName:@"Karla-Regular" size:16];
 }
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {

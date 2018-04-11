@@ -378,43 +378,46 @@ CGFloat ORKTableViewLeftMargin(UITableView *tableView) {
     }
 }
 
+/* 04-10-18
+ Statically setting font temporarily, will update to use TextKit later
+ */
 UIFont *ORKThinFontWithSize(CGFloat size) {
-    UIFont *font = nil;
-    if ([[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){.majorVersion = 8, .minorVersion = 2, .patchVersion = 0}]) {
-        font = [UIFont systemFontOfSize:size weight:UIFontWeightThin];
-    } else {
-        font = [UIFont fontWithName:@".HelveticaNeueInterface-Thin" size:size];
-        if (!font) {
-            font = [UIFont systemFontOfSize:size];
-        }
-    }
-    return font;
+//    UIFont *font = nil;
+//    if ([[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){.majorVersion = 8, .minorVersion = 2, .patchVersion = 0}]) {
+//        font = [UIFont systemFontOfSize:size weight:UIFontWeightThin];
+//    } else {
+//        font = [UIFont fontWithName:@".HelveticaNeueInterface-Thin" size:size];
+//        if (!font) {
+//            font = [UIFont systemFontOfSize:size];
+//        }
+//    }
+    return [UIFont fontWithName:@"Karla-Regular" size:18];
 }
 
 UIFont *ORKMediumFontWithSize(CGFloat size) {
-    UIFont *font = nil;
-    if ([[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){.majorVersion = 8, .minorVersion = 2, .patchVersion = 0}]) {
-        font = [UIFont systemFontOfSize:size weight:UIFontWeightMedium];
-    } else {
-        font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:size];
-        if (!font) {
-            font = [UIFont systemFontOfSize:size];
-        }
-    }
-    return font;
+//    UIFont *font = nil;
+//    if ([[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){.majorVersion = 8, .minorVersion = 2, .patchVersion = 0}]) {
+//        font = [UIFont systemFontOfSize:size weight:UIFontWeightMedium];
+//    } else {
+//        font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:size];
+//        if (!font) {
+//            font = [UIFont systemFontOfSize:size];
+//        }
+//    }
+    return [UIFont fontWithName:@"Karla-Regular" size:18];
 }
 
 UIFont *ORKLightFontWithSize(CGFloat size) {
-    UIFont *font = nil;
-    if ([[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){.majorVersion = 8, .minorVersion = 2, .patchVersion = 0}]) {
-        font = [UIFont systemFontOfSize:size weight:UIFontWeightLight];
-    } else {
-        font = [UIFont fontWithName:@".HelveticaNeueInterface-Light" size:size];
-        if (!font) {
-            font = [UIFont systemFontOfSize:size];
-        }
-    }
-    return font;
+//    UIFont *font = nil;
+//    if ([[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){.majorVersion = 8, .minorVersion = 2, .patchVersion = 0}]) {
+//        font = [UIFont systemFontOfSize:size weight:UIFontWeightLight];
+//    } else {
+//        font = [UIFont fontWithName:@".HelveticaNeueInterface-Light" size:size];
+//        if (!font) {
+//            font = [UIFont systemFontOfSize:size];
+//        }
+//    }
+    return [UIFont fontWithName:@"Karla-Regular" size:18];
 }
 
 NSURL *ORKURLFromBookmarkData(NSData *data) {

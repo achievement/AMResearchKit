@@ -37,9 +37,10 @@
 @implementation ORKSubheadlineLabel
 
 + (UIFont *)defaultFont {
-    UIFontDescriptor *descriptor = [UIFontDescriptor preferredFontDescriptorWithTextStyle:UIFontTextStyleSubheadline];
-    const CGFloat defaultSize = 15;
-    return [UIFont systemFontOfSize:[[descriptor objectForKey:UIFontDescriptorSizeAttribute] doubleValue] - defaultSize + ORKGetMetricForWindow(ORKScreenMetricFontSizeSubheadline, nil)];
+//    UIFontDescriptor *descriptor = [UIFontDescriptor preferredFontDescriptorWithTextStyle:UIFontTextStyleSubheadline];
+//    const CGFloat defaultSize = 15;
+//    return [UIFont systemFontOfSize:[[descriptor objectForKey:UIFontDescriptorSizeAttribute] doubleValue] - defaultSize + ORKGetMetricForWindow(ORKScreenMetricFontSizeSubheadline, nil)];
+    return [UIFont fontWithName:@"Karla-Regular" size:16];
 }
 
 @end
